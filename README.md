@@ -45,5 +45,17 @@ Helps keep diffs clean.
 
 ```bash
 pip install pre-commit
+```
 
-### 2. Copy Files to your Repo or link to your Repo?
+### 2. Create .pre-commit-config.yaml Configuration File
+
+repos:
+  - repo: ../team-precommit-hooks   # relative path to your hooks repo
+    rev: HEAD                       # or a specific commit hash later
+    hooks:
+      - id: block-long-comments
+      - id: require-readme
+      - id: check-whitespace
+      - id: block-debug
+
+
