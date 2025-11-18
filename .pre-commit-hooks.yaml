@@ -1,0 +1,22 @@
+# .pre-commit-hooks.yaml
+
+- id: block-long-comments
+  name: Block long comment blocks
+  description: Blocks any 3+ line consecutive comments in Python files.
+  entry: python hooks/block_long_comments.py
+  language: system
+  types: [python]
+
+- id: require-readme
+  name: Require README file
+  description: Fails commit if the repository does not contain a README file.
+  entry: python hooks/require_readme.py
+  language: system
+  types: [text]
+
+- id: check-whitespace
+  name: Check whitespace formatting
+  description: Fails on trailing whitespace or >1 blank line at EOF.
+  entry: python hooks/check_whitespace.py
+  language: system
+  types: [text]
