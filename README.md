@@ -49,6 +49,7 @@ pip install pre-commit
 
 ### 2. Create .pre-commit-config.yaml Configuration File
 
+```
 repos:
   - repo: ../team-precommit-hooks   # relative path to your hooks repo
     rev: HEAD                       # or a specific commit hash later
@@ -57,5 +58,4 @@ repos:
       - id: require-readme
       - id: check-whitespace
       - id: block-debug
-
-
+```
