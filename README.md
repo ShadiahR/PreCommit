@@ -45,3 +45,5 @@ Helps keep diffs clean.
 
 ```bash
 pip install pre-commit
+
+### 2. Copy Files to your Repo or link to your Repo?
