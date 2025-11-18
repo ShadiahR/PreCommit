@@ -1,6 +1,6 @@
 # Team Pre-commit Hooks (Python)
 
-Reusable **pre-commit hooks** designed for small development teams to keep code clean, consistent, and professional.
+Reusable **pre-commit hooks** to keep code clean, consistent, and professional.
 
 ---
 
@@ -51,11 +51,15 @@ pip install pre-commit
 
 ```
 repos:
-  - repo: ../team-precommit-hooks   # relative path to your hooks repo
-    rev: HEAD                       # or a specific commit hash later
+  - repo: https://github.com/ShadiahR/PreCommit   # relative path to your hooks repo
+    rev: v0.1.0                       # or a specific commit hash later
     hooks:
       - id: block-long-comments
       - id: require-readme
       - id: check-whitespace
-      - id: block-debug
+```
+
+### 3. Install git hooks
+```
+pre-commit install
 ```
